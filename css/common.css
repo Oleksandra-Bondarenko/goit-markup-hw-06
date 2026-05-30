@@ -1,11 +1,7 @@
 body {
+    background-color: #FFFFFF;
     font-family: "Roboto", sans-serif;
     color: #434455;
-    background-color: #FFFFFF;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
 }
 
 h1,
@@ -32,14 +28,7 @@ a {
 
 img {
     display: block;
-}
-
-.container {
-    width: 1158px;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin-left: auto;
-    margin-right: auto;
+    max-width: 100%;
 }
 
 .sr-only {
@@ -56,8 +45,14 @@ img {
 }
 
 .section {
-    padding-top: 120px;
-    padding-bottom: 120px;
+    padding-top: 96px;
+    padding-bottom: 96px;
+}
+
+.container {
+    max-width: 320px;
+    margin: 0 auto;
+    padding: 0 16px;
 }
 
 .section-title {
@@ -74,12 +69,20 @@ img {
     color: #4D5AE5;
 }
 
-.team-name,
-.feature-name,
-.portfolio-name {
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 1.2;
-    letter-spacing: 0.02em;
-    color: #2E2F42;
+@media screen and (min-width: 768px) {
+    .container {
+        max-width: 768px;
+    }
+}
+
+@media screen and (min-width: 1158px) {
+    .section {
+        padding-top: 120px;
+        padding-bottom: 120px;
+    }
+
+    .container {
+        max-width: 1158px;
+        padding: 0 15px;
+    }
 }
