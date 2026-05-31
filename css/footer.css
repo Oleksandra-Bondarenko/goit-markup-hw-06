@@ -52,8 +52,9 @@
 
 .footer-social-list {
     display: flex;
-    gap: 16px;
+    justify-content: center;
     align-items: center;
+    gap: 16px;
 }
 
 .footer-social-item {
@@ -157,9 +158,11 @@
 
 @media screen and (min-width: 768px) {
     .footer-container {
+        align-items: flex-start;
         flex-direction: row;
         flex-wrap: wrap;
         column-gap: 24px;
+        row-gap: 72px;
         padding: 0 108px;
     }
 

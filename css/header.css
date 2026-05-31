@@ -50,6 +50,7 @@
 
     .header-container {
         display: flex;
+        justify-content: unset;
         align-items: center;
     }
 
@@ -112,7 +113,7 @@
         font-weight: 400;
         font-size: 12px;
         font-style: normal;
-        line-height: 1.16;
+        line-height: 1.17;
         letter-spacing: 0.04em;
         color: #434455;
         transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
