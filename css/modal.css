@@ -150,9 +150,6 @@
 }
 
 .checkbox-wrapper {
-    display: flex;
-    align-items: center;
-    gap: 8px;
     margin-bottom: 24px;
 }
 
@@ -163,7 +160,10 @@
 }
 
 .checkbox-label {
-    display: block;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
     font-weight: 400;
     font-size: 12px;
     line-height: 1.17;
@@ -172,9 +172,10 @@
 }
 
 .custom-checkbox {
-    display: inline-flex;
+    display: flex;
     justify-content: center;
     align-items: center;
+    flex-shrink: 0;
     cursor: pointer;
     border-radius: 2px;
     border: 1px solid rgba(46, 47, 66, 0.4);
@@ -184,16 +185,7 @@
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.checkbox-text {
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 1.17;
-    letter-spacing: 0.04em;
-    color: #8E8F99;
-}
-
 .form-link {
-    line-height: 1.17;
     text-decoration: underline;
     text-decoration-skip-ink: none;
     color: #4D5AE5;
